@@ -39,7 +39,7 @@ export default function Home({ videos }) {
 }
 
 // This gets called on every request
-export async function getStaticProps() {
+export async function getServerSideProps() {
   // Fetch data from external API
   await new Promise((resolve) => setTimeout(resolve, 3000));
   const res = await fetch("http://localhost:4000/tutorials");
