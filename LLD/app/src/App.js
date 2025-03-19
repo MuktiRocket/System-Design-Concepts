@@ -9,6 +9,7 @@ import Login from "./components/Login";
 import Pagination from "./components/pagination/Pagination";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Team from "./components/Team";
+import LiveChat from "./components/live-chat/LiveChat";
 
 function App() {
   const [lang, setLang] = useState("en");
@@ -24,6 +25,7 @@ function App() {
           <a href="/comments">Nested Comments</a>
           <a href="/image-slider">Image Slider</a>
           <a href="/pagination">Pagination</a>
+          <a href="/live-chat">Live Chat</a>
           <a href="/team">Team </a>
           <a href="/login">Login </a>
         </nav>
@@ -50,6 +52,7 @@ function App() {
           <Route path="/comments" element={<Comments />} />
           <Route path="/image-slider" element={<ImageSlider />} />
           <Route path="/pagination" element={<Pagination />} />
+          <Route path="/live-chat" element={<LiveChat />} />
         </Routes>
       </BrowserRouter>
     </div>
